@@ -1,0 +1,19 @@
+/* Import tailwind packages */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply to body a set of tailwind classes to be reused */
+body {
+    @apply bg-gray-50;
+}
+
+/* Create components layer and add a custom btn class that has tailwind classes applies to it */
+@layer components {
+    .btn {
+        @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white;
+    }
+    .card {
+        @apply p-3 rounded-md bg-white shadow-md h-full;
+      }
+}
